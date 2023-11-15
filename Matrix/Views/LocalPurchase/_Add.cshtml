@@ -1,0 +1,219 @@
+﻿
+<div>
+    <div class="modal fade fullModal" id="addModalCenter" tabindex="-1" role="dialog"
+         aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Add Local Purchase</h5>
+                    <button type="button" class="close add_btn" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form class="formTopbar">
+                        <div class=" ">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="input-group input-group-sm mb-3">
+                                        <div class="input-group-text col-sm-4 txtSize">
+                                            Transaction Number
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="" disabled>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="input-group input-group-sm mb-3">
+                                        <div class="input-group-text col-sm-4 txtSize">
+                                            Transaction Date
+                                        </div>
+                                        <input type="date" class="form-control" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="input-group input-group-sm mb-3">
+                                        <div class="input-group-text col-sm-4 txtSize">
+                                            Supplier
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="input-group input-group-sm mb-3">
+                                        <div class="input-group-text col-sm-4 txtSize">
+                                            Supplier Name
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="input-group input-group-sm mb-3">
+                                        <div class="input-group-text col-sm-4 txtSize">
+                                            Supplier Invoice#
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="input-group input-group-sm mb-3">
+                                        <div class="input-group-text col-sm-4 txtSize">
+                                            Invoice Date
+                                        </div>
+                                        <input type="date" class="form-control" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <table id="" class="table table-striped table-bordered small purchaseItems">
+                                        <thead>
+                                            <tr>
+                                                <th>Material ID & Description</th>
+                                                <th>Quantity</th>
+                                                <th>Rate / Unit</th>
+                                                <th>Amount</th>
+                                                <th>WareHouse</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="input-group input-group-sm mb-3">
+                                        <div class="input-group-text col-sm-4 txtSize">
+                                            Payment Due Date
+                                        </div>
+                                        <input type="date" class="form-control" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="input-group input-group-sm mb-3">
+                                        <input type="number" class="form-control" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="col-md-2"></div>
+                                <div class="col-md-6">
+                                    <div class="input-group input-group-sm mb-3">
+                                        <div class="input-group-text col-sm-3 txtSize">
+                                            Remarks*
+                                        </div>
+                                        <textarea class="form-control" placeholder="remarks"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="input-group input-group-sm mb-3">
+                                        <div class="input-group-text col-sm-3 txtSize">
+                                            Other
+                                        </div>
+                                        <input type="number" class="form-control" placeholder="">
+                                        <div class="input-group-text col-sm-2 txtSize">
+                                            ( + )
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6"></div>
+                                <div class="col-md-4">
+                                    <div class="input-group input-group-sm mb-3">
+                                        <div class="input-group-text col-sm-3 txtSize">
+                                            Discount
+                                        </div>
+                                        <input type="number" class="form-control" placeholder="">
+                                        <div class="input-group-text col-sm-2 txtSize">
+                                            ( - )
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2"></div>
+                                <div class="col-md-6"></div>
+                                <div class="col-md-4">
+                                    <div class="input-group input-group-sm mb-3">
+                                        <div class="input-group-text col-sm-3 txtSize">
+                                            Total
+                                        </div>
+                                        <input type="number" class="form-control" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="col-md-2"></div>
+
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary m-2 col-md-2">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script>
+    $(document).ready(function () {
+        const editor = new DataTable.Editor({
+            //ajax: '../php/staff.php',
+            fields: [
+                {
+                    label: 'First name:',
+                    name: 'first_name'
+                },
+                {
+                    label: 'Last name:',
+                    name: 'last_name'
+                },
+                {
+                    label: 'Position:',
+                    name: 'position'
+                },
+                {
+                    label: 'Office:',
+                    name: 'office'
+                },
+                {
+                    label: 'Extension:',
+                    name: 'extn'
+                },
+                {
+                    label: 'Start date:',
+                    name: 'start_date',
+                    type: 'datetime'
+                },
+                {
+                    label: 'Salary:',
+                    name: 'salary'
+                }
+            ],
+            table: '#example'
+        });
+        const table = new DataTable('.purchaseItems', {
+            columns: [
+                {
+                    data: null,
+                    defaultContent: '',
+                    className: 'select-checkbox',
+                    orderable: false
+                },
+                { data: 'first_name' },
+                { data: 'last_name' },
+                { data: 'office' },
+                { data: 'start_date' },
+                { data: 'salary', render: DataTable.render.number(null, null, 0, '$') }
+            ],
+            dom: 'Bfrtip',
+            order: [[1, 'asc']],
+            select: {
+                style: 'os',
+                selector: 'td:first-child'
+            }
+        });
+        });
+        
+    </script>
+@section scripts{
+}

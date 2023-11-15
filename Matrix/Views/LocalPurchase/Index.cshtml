@@ -1,0 +1,47 @@
+﻿<div class="mb-3">
+    <div class="form-inline justify-content-between col-md-12 mb-2">
+        <div class="button">
+            <div class="btn btn-primary btn-sm mb-2 add_btn">
+                <i class="fa-solid fa-plus"></i> Add
+            </div>
+        </div>
+        <section class="addSection"></section>
+    </div>
+    <!-------------- Table ----------------->
+    <div class="container-fluid">
+        <div class="tablecard small col-md-12">
+            <table id="myTable" class="table table-striped table-bordered small">
+                <thead>
+                    <tr class="font-weight-bold">
+                        <td>Customer ID</td>
+                        <td>Customer Name</td>
+                        <td>Customer Type</td>
+                        <td>Customer Email</td>
+                        <td>Customer Phone</td>
+                        <td>Customer Address</td>
+                        <td>Customer Country</td>
+                        <td>Customer State</td>
+                        <td>Customer City</td>
+                        <td>Customer Postal Code</td>
+                        <td>Edit</td>
+                        <td>Delete</td>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+</div>
+@section scripts{
+    <script>
+        $(document).on("click", ".add_btn", function () {
+            $.ajax({
+                url: '@Url.Action("Add","LocalPurchase")',
+                type: "GET",
+                success: function (resp){
+                    $(".addSection").html(resp);
+                    $("#addModalCenter").modal('show');
+                }
+            })
+        });
+    </script>
+}

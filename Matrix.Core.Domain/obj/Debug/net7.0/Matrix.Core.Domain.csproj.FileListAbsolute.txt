@@ -1,0 +1,12 @@
+D:\Inovi\Matrix\Matrix\Matrix.Core.Domain\bin\Debug\net7.0\Matrix.Core.Domain.deps.json
+D:\Inovi\Matrix\Matrix\Matrix.Core.Domain\bin\Debug\net7.0\Matrix.Core.Domain.dll
+D:\Inovi\Matrix\Matrix\Matrix.Core.Domain\bin\Debug\net7.0\Matrix.Core.Domain.pdb
+D:\Inovi\Matrix\Matrix\Matrix.Core.Domain\obj\Debug\net7.0\Matrix.Core.Domain.csproj.AssemblyReference.cache
+D:\Inovi\Matrix\Matrix\Matrix.Core.Domain\obj\Debug\net7.0\Matrix.Core.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Inovi\Matrix\Matrix\Matrix.Core.Domain\obj\Debug\net7.0\Matrix.Core.Domain.AssemblyInfoInputs.cache
+D:\Inovi\Matrix\Matrix\Matrix.Core.Domain\obj\Debug\net7.0\Matrix.Core.Domain.AssemblyInfo.cs
+D:\Inovi\Matrix\Matrix\Matrix.Core.Domain\obj\Debug\net7.0\Matrix.Core.Domain.csproj.CoreCompileInputs.cache
+D:\Inovi\Matrix\Matrix\Matrix.Core.Domain\obj\Debug\net7.0\Matrix.Core.Domain.dll
+D:\Inovi\Matrix\Matrix\Matrix.Core.Domain\obj\Debug\net7.0\refint\Matrix.Core.Domain.dll
+D:\Inovi\Matrix\Matrix\Matrix.Core.Domain\obj\Debug\net7.0\Matrix.Core.Domain.pdb
+D:\Inovi\Matrix\Matrix\Matrix.Core.Domain\obj\Debug\net7.0\ref\Matrix.Core.Domain.dll
